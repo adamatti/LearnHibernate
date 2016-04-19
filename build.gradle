@@ -1,0 +1,19 @@
+apply plugin: "java"
+apply plugin: "idea"
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.hibernate:hibernate-core:5.1.0.Final'
+	compile 'org.slf4j:slf4j-api:1.7.21'
+	runtime 'com.h2database:h2:1.4.191'
+}
+
+idea {
+    module {
+        downloadJavadoc = false
+        downloadSources = false
+    }
+}
